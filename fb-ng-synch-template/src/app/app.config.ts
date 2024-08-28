@@ -6,16 +6,16 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
 
 import { routes } from './app.routes';
 
-// Replace the following with your Firebase project configuration
 const firebaseConfig = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_AUTH_DOMAIN',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_STORAGE_BUCKET',
-  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
-  appId: 'YOUR_APP_ID',
-  measurementId: 'YOUR_MEASUREMENT_ID' // Optional, only if using Google Analytics
+  apiKey: "AIzaSyBYQ7hK0in7q8ccZQ-h5EfcDcKreozU4XA",
+  authDomain: "danotes-abbc2.firebaseapp.com",
+  databaseURL: "https://danotes-abbc2-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "danotes-abbc2",
+  storageBucket: "danotes-abbc2.appspot.com",
+  messagingSenderId: "5725773713",
+  appId: "1:5725773713:web:bf129d0e4ba5d254b90430"
 };
+
 
 export const appConfig: ApplicationConfig = {
   providers: [
