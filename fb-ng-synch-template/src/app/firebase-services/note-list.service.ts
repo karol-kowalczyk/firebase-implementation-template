@@ -31,8 +31,12 @@ export class NoteListService {
     });
   }
 
-  async addNote() {
-    
+  async addNote(item: {}) {
+    await addDoc(this.getNotesRef(), item).catch(
+      (err) => {console.error(err)}
+    ).then( (docRef) => {
+      console.log("Document was written with ID: ", docRef)
+    });
   }
 
   subTrashList() {
